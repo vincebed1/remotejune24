@@ -8,7 +8,7 @@ pipeline {
 		}
 		stage('Print demo.txt') {
 			when {
-				branch = "demo*"
+				branch "demo*"
 			}
 			steps{
 				sh 'cat demo.txt'
